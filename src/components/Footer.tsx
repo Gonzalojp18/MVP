@@ -131,7 +131,7 @@ export function Footer({ onAdminClick }: FooterProps) {
                   <Instagram className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium">BACKROOM | BUENOS AIRES</p>
+                  <p className="text-sm font-medium">BACKROOM</p>
                   <p className="text-xs text-bronze-500 dark:text-gray-500">Síguenos en Instagram</p>
                 </div>
               </a>
@@ -145,7 +145,7 @@ export function Footer({ onAdminClick }: FooterProps) {
                   <Facebook className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium">BACKROOM | BUENOS AIRES</p>
+                  <p className="text-sm font-medium">BACKROOM</p>
                   <p className="text-xs text-bronze-500 dark:text-gray-500">Síguenos en Facebook</p>
                 </div>
               </a>
@@ -159,7 +159,7 @@ export function Footer({ onAdminClick }: FooterProps) {
                   <Twitter className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium">BACKROOM | BUENOS AIRES</p>
+                  <p className="text-sm font-medium">BACKROOM</p>
                   <p className="text-xs text-bronze-500 dark:text-gray-500">Síguenos en Twitter</p>
                 </div>
               </a>

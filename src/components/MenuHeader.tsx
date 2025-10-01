@@ -12,7 +12,7 @@ export function MenuHeader() {
       </p>
 
               {/* Award Tag */}
-        <div className="absolute top-[20%] italic sm:top-4 right-2 sm:right-4 md:right-8 lg:right-12 xl:right-16 opacity-0 animate-fade-in [animation-delay:1s] animate-slow-pulse">
+        <div className="absolute top-[10%] italic sm:top-4 right-2 sm:right-4 md:right-8 lg:right-12 xl:right-16 opacity-0 animate-fade-in [animation-delay:1s] animate-slow-pulse">
           <div className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-black px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-serif font-medium shadow-lg border border-yellow-300">
             🏆 Bar&Drinks Mejor Carta de Cócteles 2023
           </div>
