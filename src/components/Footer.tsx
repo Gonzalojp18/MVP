@@ -1,7 +1,11 @@
 import React from 'react';
-import { Instagram, Facebook, Twitter, MapPin, Phone, Clock, Star } from 'lucide-react';
+import { Instagram, Facebook, Twitter, MapPin, Phone, Clock, Star, Settings } from 'lucide-react';
 
-export function Footer() {
+interface FooterProps {
+  onAdminClick?: () => void;
+}
+
+export function Footer({ onAdminClick }: FooterProps) {
   const featuredDishes = [
     {
       name: 'Tartar de Atún Rojo',
@@ -179,6 +183,15 @@ export function Footer() {
               <a href="#" className="hover:text-bronze-600 dark:hover:text-amber-400 transition-colors">Términos y Condiciones</a>
               <a href="#" className="hover:text-bronze-600 dark:hover:text-amber-400 transition-colors">Política de Privacidad</a>
               <a href="#" className="hover:text-bronze-600 dark:hover:text-amber-400 transition-colors">Reservas</a>
+              {onAdminClick && (
+                <button
+                  onClick={onAdminClick}
+                  className="p-2 text-gray-500 dark:text-gray-500 hover:text-amber-400 dark:hover:text-amber-400 transition-colors"
+                  title="Acceso de administrador"
+                >
+                  <Settings className="w-4 h-4" />
+                </button>
+              )}
             </div>
           </div>
         </div>

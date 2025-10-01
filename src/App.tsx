@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Settings } from 'lucide-react';
 import { LoadingScreen } from './components/LoadingScreen';
 import { MenuHeader } from './components/MenuHeader';
 import { Navigation } from './components/Navigation';
@@ -57,7 +56,7 @@ const customStyles = `
       {/* Header con logo */}
       <header className="text-center py-4 sm:py-6 md:py-8 border-b border-bronze-200 dark:border-gray-800 bg-gray-900 paper-texture">
         <div className="flex items-center justify-center relative">
-      
+
       {/* Estilos CSS incluidos dentro del componente React para el Single File Mandate */}
       <style>{customStyles}</style>
 
@@ -91,17 +90,9 @@ const customStyles = `
         <p className="absolute bottom-0 text-sm sm:text-base text-bronze-gold font-serif tracking-widest opacity-0 animate-fade-in [animation-delay:0.8s] animate-slow-pulse">
           Bar de Autores & Tragos
         </p>
-        
+
     </div>
-          
-          {/* Admin Access Button */}
-          <button
-            onClick={() => setShowAdmin(true)}
-            className="absolute right-4 p-2 text-bronze-400 hover:text-bronze-600 transition-colors"
-            title="Acceso de administrador"
-          >
-            <Settings className="w-5 h-5" />
-          </button>
+
         </div>
       </header>
 
@@ -127,7 +118,7 @@ const customStyles = `
       </main>
 
       {/* Footer elegante */}
-      <Footer />
+      <Footer onAdminClick={() => setShowAdmin(true)} />
     </div>
   );
 }
