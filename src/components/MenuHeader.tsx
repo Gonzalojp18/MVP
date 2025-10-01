@@ -8,8 +8,7 @@ export function MenuHeader() {
       </h1>
       <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-gold-400 dark:via-amber-400 to-transparent mx-auto mb-8"></div>
       <p className="text-bronze-700 dark:text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed font-serif">
-        Una cuidadosa selección de cócteles de autor y gastronomía contemporánea,
-        donde cada plato cuenta una historia y cada bebida es una experiencia única.
+        Luces cálidas, conversaciones íntimas, jazz que susurra entre mesas y una barra que crea más que cócteles: crea relatos líquidos. Backroom es un homenaje a los placeres lentos, a las palabras no dichas y a los brindis inolvidables
       </p>
     </div>
   );

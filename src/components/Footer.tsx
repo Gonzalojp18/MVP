@@ -8,23 +8,23 @@ interface FooterProps {
 export function Footer({ onAdminClick }: FooterProps) {
   const featuredDishes = [
     {
-      name: 'Tartar de Atún Rojo',
-      image: 'https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg',
+      name: 'Ojo de bife',
+      image: 'https://res.cloudinary.com/dypcq8lsa/image/upload/v1759330807/ojob_oov35s.png',
       price: 24
     },
     {
-      name: 'Cordero Patagónico',
-      image: 'https://images.pexels.com/photos/299347/pexels-photo-299347.jpeg',
+      name: 'Portobello Frito',
+      image: 'https://res.cloudinary.com/dypcq8lsa/image/upload/v1759330807/porto_azz6ga.png',
       price: 45
     },
     {
-      name: 'Negroni Barrel Aged',
-      image: 'https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg',
+      name: 'Tiramisu Backroom',
+      image: 'https://res.cloudinary.com/dypcq8lsa/image/upload/v1759330807/tirami_ksjjmx.png',
       price: 22
     },
     {
-      name: 'Chocolate Valrhona',
-      image: 'https://images.pexels.com/photos/2531188/pexels-photo-2531188.jpeg',
+      name: 'Sandwich de Bondiola',
+      image: 'https://res.cloudinary.com/dypcq8lsa/image/upload/v1759330807/sand_dn6cw7.png',
       price: 16
     }
   ];
@@ -97,9 +97,7 @@ export function Footer({ onAdminClick }: FooterProps) {
                 <Clock className="w-5 h-5 text-bronze-500 dark:text-amber-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300 dark:text-gray-300 text-sm leading-relaxed">
-                    Lun - Jue: 19:00 - 01:00<br />
-                    Vie - Sáb: 19:00 - 02:00<br />
-                    Dom: 19:00 - 00:00
+                    Lun - Dom: 12:00 pm - 05:00 am<br />
                   </p>
                 </div>
               </div>
@@ -125,19 +123,21 @@ export function Footer({ onAdminClick }: FooterProps) {
             
             <div className="space-y-4">
               <a 
-                href="#" 
+                              target="_blank"
+                href="https://www.instagram.com/backroom.bar/?hl=es" 
                 className="flex items-center space-x-3 text-gray-300 dark:text-gray-300 hover:text-amber-400 dark:hover:text-amber-400 transition-colors duration-200 group"
               >
                 <div className="w-10 h-10 bg-bronze-600 dark:bg-gray-800 rounded-lg flex items-center justify-center group-hover:bg-bronze-300 dark:group-hover:bg-amber-400/10 transition-colors">
                   <Instagram className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium">@RESTO.bsas</p>
+                  <p className="text-sm font-medium">BACKROOM | BUENOS AIRES</p>
                   <p className="text-xs text-bronze-500 dark:text-gray-500">Síguenos en Instagram</p>
                 </div>
               </a>
               
               <a 
+                              target="_blank"
                 href="https://www.instagram.com/backroom.bar/?hl=es" 
                 className="flex items-center space-x-3 text-gray-300 dark:text-gray-300 hover:text-amber-400 dark:hover:text-amber-400 transition-colors duration-200 group"
               >
@@ -145,20 +145,21 @@ export function Footer({ onAdminClick }: FooterProps) {
                   <Facebook className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium">RESTO Buenos Aires</p>
+                  <p className="text-sm font-medium">BACKROOM | BUENOS AIRES</p>
                   <p className="text-xs text-bronze-500 dark:text-gray-500">Síguenos en Facebook</p>
                 </div>
               </a>
               
               <a
-                href="#"
+                target="_blank"
+                href="https://www.instagram.com/backroom.bar/?hl=es"
                 className="flex items-center space-x-3 text-gray-300 dark:text-gray-300 hover:text-amber-400 dark:hover:text-amber-400 transition-colors duration-200 group"
               >
                 <div className="w-10 h-10 bg-bronze-600 dark:bg-gray-800 rounded-lg flex items-center justify-center group-hover:bg-bronze-300 dark:group-hover:bg-amber-400/10 transition-colors">
                   <Twitter className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-sm font-medium">@RESTO</p>
+                  <p className="text-sm font-medium">BACKROOM | BUENOS AIRES</p>
                   <p className="text-xs text-bronze-500 dark:text-gray-500">Síguenos en Twitter</p>
                 </div>
               </a>
@@ -172,10 +173,10 @@ export function Footer({ onAdminClick }: FooterProps) {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-center md:text-left">
               <p className="text-gray-400 dark:text-gray-400 text-sm">
-                © 2025 RESTO. Todos los derechos reservados.
+                © 2025 BACKROOM. Todos los derechos reservados.
               </p>
               <p className="text-gray-500 dark:text-gray-500 text-xs mt-1">
-                Desarrollado por CLICKANDTHINKAI • Automatizamos. Optimizamos. Transformamos.
+                Desarrollado por CLICKANDTHINKAI • Automatizamos. Optimizamos. Transformamos. <span><a href="http://www.clickthinkai.com" target="_blank" rel="noopener noreferrer">Find Click here</a></span>
               </p>
             </div>
 
