@@ -29,18 +29,24 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-cream-100 text-bronze-800 menu-texture">
       {/* Header con logo */}
-      <header className="text-center py-8 border-b border-gray-800">
+      <header className="text-center py-12 border-b border-bronze-200 bg-cream-50 paper-texture">
         <div className="flex items-center justify-center relative">
-          <h1 className="text-3xl font-serif text-amber-400 tracking-wider">
-            Tu Restaurant
-          </h1>
+          <div className="text-center">
+            <h1 className="text-5xl font-display font-bold bronze-gradient tracking-wider mb-2">
+              BACKROOM
+            </h1>
+            <div className="w-32 h-0.5 bg-gradient-to-r from-transparent via-bronze-400 to-transparent mx-auto mb-2"></div>
+            <p className="text-bronze-600 text-sm font-serif tracking-widest uppercase">
+              Experiencia Gastronómica
+            </p>
+          </div>
           
           {/* Admin Access Button */}
           <button
             onClick={() => setShowAdmin(true)}
-            className="absolute right-4 p-2 text-gray-600 hover:text-amber-400 transition-colors"
+            className="absolute right-4 p-2 text-bronze-400 hover:text-bronze-600 transition-colors"
             title="Acceso de administrador"
           >
             <Settings className="w-5 h-5" />
