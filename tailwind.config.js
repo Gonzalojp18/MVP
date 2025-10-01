@@ -43,8 +43,8 @@ export default {
         }
       },
       fontFamily: {
-        'display': ['Playfair Display', 'serif'],
-        'serif': ['Cormorant Garamond', 'serif'],
+        'display': ['Cormorant Garamond', 'serif'],
+        'serif': ['Montserrat', 'sans-serif'],
       }
     },
   },

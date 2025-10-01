@@ -30,20 +30,69 @@ function App() {
     return <LoadingScreen onComplete={handleLoadingComplete} />;
   }
 
+  // Clases personalizadas de Tailwind para los colores originales (bronce y fondo oscuro)
+// Simulamos el fondo negro elegante y el color dorado/bronce.
+const customStyles = `
+  .bg-dark-noir {
+    background-color: #000000;
+  }
+  .text-bronze-gold {
+    color: #b8860b; /* Color similar al Goldenrod o bronce oscuro */
+  }
+  .font-display-serif {
+    font-family: 'Times New Roman', Times, serif; /* Fuente serif clásica para elegancia */
+    letter-spacing: 0.5em; /* Espaciado entre letras para el estilo de marca */
+  }
+  .animate-slow-pulse {
+    animation: slow-pulse 3s infinite ease-in-out;
+  }
+  @keyframes slow-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+  }
+`;
+
   return (
     <div className="min-h-screen bg-cream-100 dark:bg-gray-900 text-bronze-800 dark:text-gray-100 menu-texture">
       {/* Header con logo */}
-      <header className="text-center py-12 border-b border-bronze-200 dark:border-gray-800 bg-gray-900 paper-texture">
+      <header className="text-center py-8 border-b border-bronze-200 dark:border-gray-800 bg-gray-900 paper-texture">
         <div className="flex items-center justify-center relative">
-          <div className="text-center">
-            <h1 className="text-5xl font-display font-bold bronze-gradient tracking-wider mb-2">
-              BACKROOM
-            </h1>
-            <div className="w-32 h-0.5 bg-gradient-to-r from-transparent via-bronze-400 dark:via-amber-400 to-transparent mx-auto mb-2"></div>
-            <p className="text-gray-300 text-sm font-serif tracking-widest uppercase">
-              Experiencia Gastronómica
-            </p>
-          </div>
+      
+      {/* Estilos CSS incluidos dentro del componente React para el Single File Mandate */}
+      <style>{customStyles}</style>
+
+      {/* Contenedor principal para centrar y estructurar el diseño del "marco" */}
+      <div className="relative w-full max-w-5xl h-[15vh] flex flex-col items-center justify-center">
+
+        {/* 1. Texto Superior: "Desde 2020" */}
+        <p className="absolute top-0 text-xs text-bronze-gold uppercase tracking-widest animate-fade-in animate-slow-pulse">
+          Desde 2020
+        </p>
+
+        {/* 2. Texto Izquierdo: "Drink" */}
+        <p className="absolute left-20 top-1/2 transform -translate-y-1/2 text-lg text-white font-serif tracking-widest opacity-0 animate-fade-in [animation-delay:0.3s]">
+          Drink
+        </p>
+
+        {/* 3. Texto Derecho: "Food" */}
+        <p className="absolute right-20 top-1/2 transform -translate-y-1/2 text-lg text-white font-serif tracking-widest opacity-0 animate-fade-in [animation-delay:0.3s]">
+          Food
+        </p>
+
+        {/* 4. Título Principal: "BACKROOM" */}
+        <h1 
+          className="text-2xl md:text-4xl font-display-serif text-white uppercase text-center 
+                     opacity-0 animate-fade-in [animation-delay:0.5s] animate-slow-pulse"
+          style={{ letterSpacing: '0.4em', textShadow: '0 0 10px rgba(255, 255, 255, 0.1)' }}
+        >
+          BACKROOM
+        </h1>
+
+        <p className="absolute bottom-0 text-base text-bronze-gold font-serif tracking-widest mt-4 opacity-0 animate-fade-in [animation-delay:0.8s] animate-slow-pulse">
+          Bar de Autores & Tragos
+        </p>
+        
+    </div>
           
           {/* Admin Access Button */}
           <button
