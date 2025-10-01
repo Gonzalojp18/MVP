@@ -10,7 +10,7 @@ import { menuData } from './data/menuData';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [activeCategory, setActiveCategory] = useState('Entradas');
+  const [activeCategory, setActiveCategory] = useState('Principales');
   const [showAdmin, setShowAdmin] = useState(false);
 
   const categories = menuData.map(category => category.name);
