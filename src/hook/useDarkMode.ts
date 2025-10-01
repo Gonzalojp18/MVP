@@ -13,17 +13,12 @@ export function useDarkMode() {
     localStorage.setItem('darkMode', JSON.stringify(isDarkMode));
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
-      console.log('Added dark class');
     } else {
       document.documentElement.classList.remove('dark');
-      console.log('Removed dark class');
     }
   }, [isDarkMode]);
 
-  const toggleDarkMode = () => {
-    console.log('Toggling dark mode');
-    setIsDarkMode(!isDarkMode);
-  };
+  const toggleDarkMode = () => setIsDarkMode(!isDarkMode);
 
   return { isDarkMode, toggleDarkMode };
 }

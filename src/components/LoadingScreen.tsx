@@ -62,34 +62,34 @@ export function LoadingScreen({ onComplete = () => {} }: LoadingScreenProps) {
       <style>{customStyles}</style>
 
       {/* Contenedor principal para centrar y estructurar el diseño del "marco" */}
-      <div className="relative w-full max-w-5xl h-64 flex flex-col items-center justify-center">
+      <div className="relative w-full max-w-5xl h-48 sm:h-64 flex flex-col items-center justify-center px-4">
 
         {/* 1. Texto Superior: "Desde 2020" */}
-        <p className="absolute top-0 text-xs text-bronze-gold uppercase tracking-widest animate-fade-in animate-slow-pulse">
+        <p className="absolute top-0 text-xs sm:text-sm text-bronze-gold uppercase tracking-widest animate-fade-in animate-slow-pulse">
           Desde 2020
         </p>
 
         {/* 2. Texto Izquierdo: "Drink" */}
-        <p className="absolute left-0 top-1/2 transform -translate-y-1/2 text-lg text-white font-serif tracking-widest opacity-0 animate-fade-in [animation-delay:0.3s]">
+        <p className="absolute left-2 sm:left-4 md:left-8 lg:left-16 top-1/2 transform -translate-y-1/2 text-sm sm:text-base md:text-lg text-white font-serif tracking-widest opacity-0 animate-fade-in [animation-delay:0.3s]">
           Drink
         </p>
 
         {/* 3. Texto Derecho: "Food" */}
-        <p className="absolute right-0 top-1/2 transform -translate-y-1/2 text-lg text-white font-serif tracking-widest opacity-0 animate-fade-in [animation-delay:0.3s]">
+        <p className="absolute right-2 sm:right-4 md:right-8 lg:right-16 top-1/2 transform -translate-y-1/2 text-sm sm:text-base md:text-lg text-white font-serif tracking-widest opacity-0 animate-fade-in [animation-delay:0.3s]">
           Food
         </p>
 
         {/* 4. Título Principal: "BACKROOM" */}
-        <h1 
-          className="text-6xl md:text-8xl font-display-serif text-white uppercase text-center 
+        <h1
+          className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display-serif text-white uppercase text-center
                      opacity-0 animate-fade-in [animation-delay:0.5s] animate-slow-pulse"
-          style={{ letterSpacing: '0.4em', textShadow: '0 0 10px rgba(255, 255, 255, 0.1)' }}
+          style={{ letterSpacing: '0.2em', textShadow: '0 0 10px rgba(255, 255, 255, 0.1)' }}
         >
           BACKROOM
         </h1>
-        
+
         {/* 5. Texto Inferior: "Bar de Autores & Tragos" */}
-        <p className="absolute bottom-0 text-base text-bronze-gold font-serif tracking-widest mt-4 opacity-0 animate-fade-in [animation-delay:0.8s] animate-slow-pulse">
+        <p className="absolute bottom-0 text-sm sm:text-base text-bronze-gold font-serif tracking-widest opacity-0 animate-fade-in [animation-delay:0.8s] animate-slow-pulse">
           Bar de Autores & Tragos
         </p>
       </div>
