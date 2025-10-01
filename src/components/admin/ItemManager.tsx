@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, Edit2, Trash2, Save, X, Upload, Eye } from 'lucide-react';
+import { Plus, CreditCard as Edit2, Trash2, Save, X, Upload, Eye } from 'lucide-react';
 import { menuData, MenuItem } from '../../data/menuData';
 
 interface ItemManagerProps {

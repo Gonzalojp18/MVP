@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, Edit2, Trash2, Save, X } from 'lucide-react';
+import { Plus, CreditCard as Edit2, Trash2, Save, X } from 'lucide-react';
 import { menuData } from '../../data/menuData';
 
 export function CategoryManager() {
